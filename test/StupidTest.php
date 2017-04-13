@@ -1,6 +1,6 @@
 <?php
 
-class StupidTest extends \PHPUnit_Framework_TestCase
+class StupidTest extends \PHPUnit\Framework\DOMTestCase
 {
     public function testTrueIsTrue()
     {
@@ -15,9 +15,10 @@ class StupidTest extends \PHPUnit_Framework_TestCase
 
     public function testHTML()
     {
+        $html = file_get_contents('index.php');
+        $selector = 'div.foo';
+        $content  = 'Test class text';
 
-        $matcher = array('id' => 'my_id');
-        $htmlOutput = '<p id="my_id">ciao</p>';
-        $this->assertTag($matcher, $htmlOutput);
+        $this->assertSelectEquals($selector, $content, true, $html);
     }
 }
