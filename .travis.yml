@@ -2,4 +2,6 @@ language: php
 php:
 - 7.0
 - 7.1
-script: phpunit test
+before_script:
+  - php composer.phar install
+script: vendor/bin/phpunit test
