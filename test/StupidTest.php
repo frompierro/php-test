@@ -1,6 +1,8 @@
 <?php
 
-class StupidTest extends \PHPUnit\Framework\DOMTestCase
+use \PHPUnit\Framework\DOMTestCase;
+
+class StupidTest extends DOMTestCase
 {
     public function testTrueIsTrue()
     {
