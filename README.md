@@ -12,6 +12,6 @@ The PHPUnit DOM assertions require PHP 7.0 or later.
 ## References
 
 1. [PHPUnit](https://phpunit.de/)
-2. [https://github.com/lstrojny/phpunit-dom-assertions](phpunit-dom-assertions)
+2. [phpunit-dom-assertions](https://github.com/lstrojny/phpunit-dom-assertions)
 
 
