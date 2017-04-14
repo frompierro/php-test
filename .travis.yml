@@ -4,4 +4,4 @@ php:
 - 7.1
 before_script:
   - php composer.phar install
-script: vendor/bin/phpunit test
+script: vendor/bin/phpunit tests
